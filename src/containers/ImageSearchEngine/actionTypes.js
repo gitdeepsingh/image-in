@@ -1,0 +1,1 @@
+export const SET_SEARCHED_VALUE = "SET_SEARCHED_VALUE";

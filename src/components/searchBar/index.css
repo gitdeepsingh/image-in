@@ -1,0 +1,40 @@
+.searchbar {
+  min-width: 60vw;
+  margin-right: 1rem;
+  outline: none;
+  padding: 0.75rem;
+  border: none;
+  box-shadow: 0px 2px 7px 0px #9b9b9b;
+}
+
+.search-icon {
+  border: 1px solid #000;
+  padding: 13px 26px;
+  border-radius: 3px;
+  display: flex;
+  color: #fff;
+  background: #333333;
+  cursor: pointer;
+}
+
+.search-icon:hover {
+  box-shadow: 0px 0px 5px 0px #1b1b1b;
+}
+
+.images-wrapper {
+  position: absolute;
+  left: 40%;
+  top: 50%;
+  transform: translate(-40%, -40%);
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  max-height: 50vh;
+  overflow-y: auto;
+}
+
+.display-image {
+  background-size: cover;
+  margin: 1rem;
+  display: flex;
+}
