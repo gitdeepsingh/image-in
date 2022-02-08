@@ -84,10 +84,10 @@ class ImageSearchEngine extends Component {
 
   renderSearchResults = () => {
     const { imagesDisplayed } = this.state;
-    return imagesDisplayed.map((item, i) => {
+    return imagesDisplayed.map(item => {
       return (
         <img
-          key={i}
+          key={item.id}
           src={item.urls.thumb} // small, thumb, raw, regular
           width={120}
           height={120}
