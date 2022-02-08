@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import "./index.css";
 
 export const SearchBar = (props) => {
-  const { placeholder, handleChange, onSearch, searchValue } = props;
+  const { placeholder, handleChange, onSearch } = props;
   return (
     <div className="input-group rounded searchbar-wrapper">
       <input

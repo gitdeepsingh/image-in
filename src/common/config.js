@@ -1,3 +1,5 @@
-export default {
-    SECRET: "XXXXXX"
-}
+const config = {
+  SECRET: "XXXXXX",
+};
+
+export default config;

@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import { SearchBar, AppSpinner, ToastMessager } from "../../components";
 import { setSearchedValue } from "./actions";
-import config from './../../common/config';
+import config from "./../../common/config";
 
 import "./index.css";
 
@@ -84,11 +84,12 @@ class ImageSearchEngine extends Component {
 
   renderSearchResults = () => {
     const { imagesDisplayed } = this.state;
-    return imagesDisplayed.map(item => {
+    return imagesDisplayed.map((item) => {
       return (
         <img
           key={item.id}
-          src={item.urls.thumb} // small, thumb, raw, regular
+          src={item?.urls?.thumb} // small, thumb, raw, regular
+          alt={item?.alt_description}
           width={120}
           height={120}
           className="display-image"
